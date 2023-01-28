@@ -2,11 +2,17 @@
 
 public class Game
 {
+    private readonly Frame[] _frames = new Frame[10];
     private readonly int[] _rolls = new int[21];
+    private int _currentFrame;
     private int _currentRoll;
 
     public void Roll(int knockedPins)
     {
+        //if (_frames[_currentFrame] == null)
+        //{
+        //    _frames[_currentFrame] = new Frame()
+        //}
         _rolls[_currentRoll++] = knockedPins;
     }
 
@@ -19,13 +25,18 @@ public class Game
             if (IsSpare(roll))
             {
                 score +=  10 + _rolls[roll + 2];
+                roll += 2;
+            }
+            else if (IsStrike(roll))
+            {
+                score += 10 + _rolls[roll + 1] + _rolls[roll + 2];
+                roll += 1;
             }
             else
             {
                 score += _rolls[roll] + _rolls[roll + 1];
-            }
-            
-            roll += 2;
+                roll += 2;
+            }                  
         }
 
         return score;
@@ -34,5 +45,10 @@ public class Game
     private bool IsSpare(int roll)
     {
         return _rolls[roll] + _rolls[roll + 1] == 10;
+    }
+
+    private bool IsStrike(int roll)
+    {
+        return _rolls[roll] == 10;
     }
 }

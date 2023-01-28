@@ -62,4 +62,70 @@ public class GameTest
         var expectedScore = 42;
         Assert.Equal(expectedScore, game.Score());
     }
+
+    [Fact]
+    public void Tenth_Frame_Spare_Test()
+    {
+        game.Roll(5);
+        game.Roll(5);
+        game.Roll(10);
+        game.Roll(3);
+        game.Roll(3);
+        MultipleRolls(12, 0);
+        game.Roll(4);
+        game.Roll(6);
+        game.Roll(5);
+        var expectedScore = 57;
+        Assert.Equal(expectedScore, game.Score());
+    }
+
+    [Fact]
+    public void Tenth_Frame_Spare_Test2()
+    {
+        game.Roll(5);
+        game.Roll(5);
+        game.Roll(4);
+        game.Roll(3);
+        game.Roll(3);
+        game.Roll(3);
+        MultipleRolls(12, 0);
+        game.Roll(4);
+        game.Roll(6);
+        game.Roll(5);
+        var expectedScore = 42;
+        Assert.Equal(expectedScore, game.Score());
+    }
+
+    [Fact]
+    public void Tenth_Frame_Strike_Test()
+    {
+        game.Roll(5);
+        game.Roll(5);
+        game.Roll(4);
+        game.Roll(3);
+        game.Roll(3);
+        game.Roll(3);
+        MultipleRolls(12, 0);
+        game.Roll(10);
+        game.Roll(6);
+        var expectedScore = 43;
+        Assert.Equal(expectedScore, game.Score());
+    }
+
+    [Fact]
+    public void Tenth_Frame_Spare_Test3()
+    {
+        game.Roll(5);
+        game.Roll(5);
+        game.Roll(4);
+        game.Roll(3);
+        game.Roll(3);
+        game.Roll(3);
+        MultipleRolls(12, 0);
+        game.Roll(4);
+        game.Roll(6);
+        game.Roll(6);
+        var expectedScore = 43;
+        Assert.Equal(expectedScore, game.Score());
+    }
 }
