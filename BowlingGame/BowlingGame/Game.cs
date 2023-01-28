@@ -2,17 +2,11 @@
 
 public class Game
 {
-    private readonly Frame[] _frames = new Frame[10];
     private readonly int[] _rolls = new int[21];
-    private int _currentFrame;
     private int _currentRoll;
 
     public void Roll(int knockedPins)
     {
-        //if (_frames[_currentFrame] == null)
-        //{
-        //    _frames[_currentFrame] = new Frame()
-        //}
         _rolls[_currentRoll++] = knockedPins;
     }
 
