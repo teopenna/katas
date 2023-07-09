@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChristmasLights", "ChristmasLights", "{87B50F0C-BBF5-409B-8875-05AE17AA62D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{83E8E64A-0F85-429B-97A2-E70CD2C248B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristmasLights.App", "ChristmasLights\src\ChristmasLights.App\ChristmasLights.App.csproj", "{871886D4-65D8-4DC1-B48A-84E492427BF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AA54E183-B976-4A17-B167-CD9D4CD26705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChristmasLights.Tests", "ChristmasLights\tests\ChristmasLights.Tests\ChristmasLights.Tests.csproj", "{8CC909EC-B240-45FE-AEB2-DEAB6F8320B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BowlingGame", "BowlingGame", "{867972D3-8292-4BD8-B349-D07ABDB5CBEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame", "BowlingGame\BowlingGame\BowlingGame.csproj", "{A362F79B-081B-4B2C-8228-253C8778B503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BowlingGame.Tests", "BowlingGame\BowlingGame.Tests\BowlingGame.Tests.csproj", "{DD3D8FAF-473A-4515-A6E6-F37E4BE5F11A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{871886D4-65D8-4DC1-B48A-84E492427BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871886D4-65D8-4DC1-B48A-84E492427BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871886D4-65D8-4DC1-B48A-84E492427BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871886D4-65D8-4DC1-B48A-84E492427BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CC909EC-B240-45FE-AEB2-DEAB6F8320B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CC909EC-B240-45FE-AEB2-DEAB6F8320B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CC909EC-B240-45FE-AEB2-DEAB6F8320B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CC909EC-B240-45FE-AEB2-DEAB6F8320B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A362F79B-081B-4B2C-8228-253C8778B503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A362F79B-081B-4B2C-8228-253C8778B503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A362F79B-081B-4B2C-8228-253C8778B503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A362F79B-081B-4B2C-8228-253C8778B503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3D8FAF-473A-4515-A6E6-F37E4BE5F11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3D8FAF-473A-4515-A6E6-F37E4BE5F11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3D8FAF-473A-4515-A6E6-F37E4BE5F11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3D8FAF-473A-4515-A6E6-F37E4BE5F11A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{83E8E64A-0F85-429B-97A2-E70CD2C248B5} = {87B50F0C-BBF5-409B-8875-05AE17AA62D8}
+		{871886D4-65D8-4DC1-B48A-84E492427BF4} = {83E8E64A-0F85-429B-97A2-E70CD2C248B5}
+		{AA54E183-B976-4A17-B167-CD9D4CD26705} = {87B50F0C-BBF5-409B-8875-05AE17AA62D8}
+		{8CC909EC-B240-45FE-AEB2-DEAB6F8320B3} = {AA54E183-B976-4A17-B167-CD9D4CD26705}
+		{A362F79B-081B-4B2C-8228-253C8778B503} = {867972D3-8292-4BD8-B349-D07ABDB5CBEC}
+		{DD3D8FAF-473A-4515-A6E6-F37E4BE5F11A} = {867972D3-8292-4BD8-B349-D07ABDB5CBEC}
+	EndGlobalSection
+EndGlobal
